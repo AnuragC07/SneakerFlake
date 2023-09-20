@@ -341,16 +341,18 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
 #mid button {
     margin-top: 70px;
     padding: 10px 40px;
-    border: none;
-    color: #000000;
+    border: 1px solid white;
+    color: #ffffff;
+    background: #000000;
+ 
     font-weight: 400;
     transition: all 0.2s ease;
 }
 #mid button:hover {
     cursor: pointer;
-    border: 1px solid white;
-    color: #ffffff;
-    background: #000000;
+    border: none;
+    color: #000000;
+    background: white;
 }
 #right {
     margin: 0;
@@ -390,5 +392,139 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     width: 348px;
     margin-left: 0;
 }
+
+#styleYourself {
+    display: flex;
+    margin-top: 50px;
+}
+#styleYourself #textSection {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+#styleYourself #textSection p{
+    font-weight: 200;
+}
+#styleYourself #imgSection {
+    background-image: url(./img/download.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 60vw;
+    clip-path: polygon(58% 0, 100% 0, 100% 100%, 0% 100%);
+}
+#infintyRN4 {
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#infintyRN4 img {
+    width:98vw;
+    margin: 20px 0px;
+    margin-top: 50px;
+    clip-path: polygon(0 0, 69% 0, 100% 20%, 100% 100%, 75% 100%, 30% 100%, 0 77%, 0 29%);
+}
+#infintyRN4 h1 {
+    font-size: 47px;
+    font-style: italic;
+}
+#infintyRN4 p {
+    font-size: 23px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background: #000000;
+    padding: 40px 0px;
+}
+#footer #part1 h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+#footer #part1 h2{
+    font-size: 18px;
+    margin: 8px 0px;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgb(161, 161, 161);
+}
+#footer #part2 h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+#footer #part2 h2{
+    font-size: 18px;
+    margin: 8px 0px;
+    font-weight: 400;
+    color: rgb(161, 161, 161);
+    cursor: pointer;
+}
+#footer #part3 h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+#footer #part3 h2{
+    font-size: 18px;
+    margin: 8px 0px;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgb(161, 161, 161);
+}
+#footer #part4 h1{
+    font-size: 21px;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+#footer #part4 input {
+    border: 1px solid black;
+    padding: 5px;
+}
+#footer #part4 button {
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    background: black;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 200;
+    width: 50px;
+}
+#footer #part4 i {
+    font-size: 25px;
+    cursor: pointer;
+
+    margin: 5px 10px;
+}
+#footer #part4 p{
+    margin-top: 10px;
+    font-weight: 200;
+    color: #c7c7c7;
+}
+
+
+
+
+
+
+
+
+
 
 
