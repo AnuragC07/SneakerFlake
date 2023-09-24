@@ -97,6 +97,10 @@ nav {
     color: #f86205;
     cursor: pointer;
 }
+#navbtm i {
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+}
 
 #navbtm ul {
     display: flex;
@@ -105,6 +109,25 @@ nav {
     justify-content: center;
     list-style: none;
 }
+#navbtm #box {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 100vw;
+    border: 0px solid red;
+    background: rgba(23, 23, 23);
+    color: #ffffff;
+    position: absolute;
+    top: 165px;
+    transition: all 0.3s ease-in;
+    /* box-shadow: 2px 2px 12px rgb(0, 0, 0); */
+    backdrop-filter: blur(90px);
+    padding: 50px;
+    cursor: pointer;
+    z-index: 999;
+}
+
 
 #navbtm li {
     text-decoration: none;
@@ -137,7 +160,7 @@ nav {
     margin-top: 30px;
     height: 600px;
     width: 600px;
-    z-index: 9;
+    /* z-index: 9; */
 }
 #slideritem {
     display: flex;

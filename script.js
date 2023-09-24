@@ -2,6 +2,41 @@ const wrapper = document.querySelector("#sliderwrapper");
 const menuItems = document.querySelectorAll("#menuitem");
 const products = document.querySelector("#products");
 const product = document.querySelectorAll("#product");
+const popUp = document.querySelector("#popupIcon");
+const box = document.querySelector("#box");
+const main = document.querySelector("#main");
+const menuitem = document.querySelector("#menuitem");
+const navtop = document.querySelector("#navtop");
+
+
+var flag = 0;
+
+popUp.addEventListener("mouseover", ()=> {
+
+
+    if(flag == 0){
+        box.setAttribute("style", "visibility: visible; transition: all 0.4s ease;");
+        console.log("h");
+        // flag = 1;
+        if(main.addEventListener("mouseover", ()=> {
+            box.setAttribute("style", "visibility: hidden");
+        }));
+        else if(menuitem.addEventListener("mouseover", ()=> {
+            box.setAttribute("style", "visibility: hidden");
+        }));
+        else if(navtop.addEventListener("mouseover", ()=> {
+            box.setAttribute("style", "visibility: hidden");
+        }));
+    }
+    // else{
+    //     box.setAttribute("style", "visibility: hidden");
+    //     console.log("h");
+    //     flag = 0;
+    // }
+})
+
+
+
 
 menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
@@ -9,6 +44,8 @@ menuItems.forEach((item, index) => {
         // console.log("hello"+index);
     });
 });
+
+
 
 // setInterval(function(){
 //     product.style.transform = `translateX(${-100}vw)`;
