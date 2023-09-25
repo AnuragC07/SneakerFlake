@@ -121,22 +121,170 @@ nav {
 #main {
     display: flex;
     padding-top: 40px;
+    background: rgb(237, 237, 237);
 }
 #leftbar {
-    border: 2px solid red;
+    border: 0px solid rgb(84, 84, 84);
+    background: rgb(255, 255, 255);
+    border-top-right-radius: 12px;
+    /* box-shadow: 2px 2px 12px rgb(195, 195, 195); */
     height: 100vh;
     padding: 30px;
-    width: 20%;
+    width: 15%;
 }
 #leftbar #brands {
     display: flex;
     flex-direction: column;
     font-size: 21px;
+    padding-bottom: 20px;
 }
 #leftbar #brands h1{
     font-size: 25px;
+    margin-bottom: 20px;
 }
-#leftbar #brands input {
+#leftbar #brands input[type="checkbox"] {
+    margin-right: 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+#leftbar #price {
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+    padding-bottom: 20px;
+}
+#leftbar #price  h1{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#leftbar #price  input {
     margin-right: 10px;
     font-size: 50px;
+    margin-bottom: 10px;
 }
+
+#leftbar #color{
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+    padding-bottom: 20px;
+}
+#leftbar #color  h1{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#leftbar #color input {
+    margin-right: 10px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#leftbar #color #color-icon1 {
+    border: 1px solid red;
+    background: red;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: red;
+    margin-left: 5px;
+}
+#leftbar #color #color-icon2 {
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
+#leftbar #color #color-icon3 {
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+}
+#leftbar #color #color-icon4 {
+    border: 1px solid rgb(31, 163, 21);
+    background: rgb(31, 163, 21);
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: rgb(31, 163, 21);
+    margin-left: 5px;
+}
+
+#main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 82%;
+    background: white;
+    border: 0px solid black;
+    /* box-shadow: 2px 2px 12px rgb(195, 195, 195); */
+    border-radius: 12px;
+    margin-left: 2%;
+    padding: 20px;
+}
+
+#product{
+    border: 0px solid black;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px rgb(163, 163, 163);
+}
+#product:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgb(91, 91, 91);
+    transition: all 0.1s ease-in;
+}
+#product img {
+    border: 0px solid black;
+    height: 300px;
+    width: 250px;
+    margin-left: 25px;
+}
+#product #details{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#product #details p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(129, 129, 129);
+}
+#product #details h1 {
+    font-size: 25px;
+    font-style: italic;
+}
+#product #details #price {
+    margin-right: 20px;
+    font-size: 26px;
+    font-weight: 800;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+#product #details #price i {
+    font-size: 23px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: 0px solid black;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px 12px rgb(218, 218, 218);
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+
