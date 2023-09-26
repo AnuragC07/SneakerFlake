@@ -223,7 +223,7 @@ nav {
     flex-wrap: wrap;
     gap: 25px;
     width: 82%;
-    background: white;
+    background: rgb(255, 255, 255);
     border: 0px solid black;
     /* box-shadow: 2px 2px 12px rgb(195, 195, 195); */
     border-radius: 12px;
@@ -232,16 +232,17 @@ nav {
 }
 
 #product{
-    border: 0px solid black;
+    border: 1px solid rgb(209, 209, 209);
     width: 300px;
     height: 400px;
     position: relative;
     border-radius: 12px;
-    box-shadow: 2px 2px 12px rgb(163, 163, 163);
+    background: white;
+    /* box-shadow: 2px 2px 12px rgb(207, 207, 207); */
 }
 #product:hover {
     cursor: pointer;
-    box-shadow: 2px 2px 12px rgb(91, 91, 91);
+    box-shadow: 2px 2px 12px rgb(179, 179, 179);
     transition: all 0.1s ease-in;
 }
 #product img {
