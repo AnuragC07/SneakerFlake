@@ -127,25 +127,29 @@ nav {
 }
 #productImg {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
     width: 40vw;
 }
 #productDetails #productImg img{
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     margin-left: 30px;
-    border: 1px solid black;
+    border: 0px solid black;
 }
 #productDetails #productImg #imgSlider {
     display: flex;
+    margin-top: 10px;
+}
+#productDetails #productImg #imgSlider img {
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 12px;
 }
 #productDetails #productImg #img2 {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 }
 #productInfo {
-    border: 1px solid rgb(188, 188, 188);
+    border: 0px solid rgb(188, 188, 188);
     border-radius: 20px;
     /* box-shadow: 2px 2px 12px rgb(125, 125, 125);  */
     width: 50vw;
@@ -157,18 +161,19 @@ nav {
     font-size: 47px;
 }
 #productInfo p{
-    font-size: 27px;
+    font-size: 25px;
     color: rgb(128, 128, 128);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 #productInfo h2{
-    font-size: 35px;
+    font-size: 45px;
     margin-top: 20px;
+    font-weight: 400;
 }
 #productInfo #taxes{
     font-size: 22px;
-    color: rgb(102, 163, 121);
-    margin-bottom: 15px;
+    color: #e15600;
+    margin-bottom: 20px;
 }
 #productInfo #sizes {
     display: flex;
@@ -178,7 +183,7 @@ nav {
 }
 #productInfo #sizeh2 {
     font-size: 22px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 #productInfo span {
     border: 1px solid rgb(183, 183, 183);
@@ -213,4 +218,62 @@ nav {
     border-radius: 42px;
     width: 90%;
     margin-left: 35px;
-}   
+    margin-bottom: 40px;
+} 
+#productInfo  #delivery{
+    margin-top: 30px;
+}
+#productInfo  #delivery h1 {
+    font-size: 35px;
+}
+#productInfo  #delivery input {
+    margin-top: 30px;
+    height: 45px;
+    border: 1px solid black;
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 200;
+}
+#productInfo  #delivery p{
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+#productInfo  #delivery h2{
+    font-size: 19px;
+    font-weight: 400;
+}
+#productInfo  #offers h1{
+    font-size: 35px;
+    margin: 25px 0px;
+}
+#productInfo  #offers p{
+    margin-top: 15px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #000000;
+}
+#productInfo #reviews{
+    margin-top: 30px;
+}
+#productInfo #reviews h1{
+    font-size: 35px;
+}
+#productInfo #reviews h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#productInfo #reviews h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(99, 99, 99);
+}
+#productInfo #reviews #rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#productInfo #reviews #rating i{
+    font-size: 34px;
+}
