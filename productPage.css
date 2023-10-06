@@ -178,16 +178,18 @@ nav {
 #productInfo #sizes {
     display: flex;
     gap: 20px;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 200;
+    cursor: pointer;
 }
+
 #productInfo #sizeh2 {
     font-size: 22px;
     margin-bottom: 20px;
 }
 #productInfo span {
     border: 1px solid rgb(183, 183, 183);
-    padding: 15px;
+    padding: 10px;
     border-radius: 12px;
 }
 #quantityBtn {
@@ -204,21 +206,21 @@ nav {
 }
 #quantityBtn #plusBtn{
     padding: 10px;
-    border: 1px solid rgb(198, 198, 198);
+    border: 0px solid rgb(198, 198, 198);
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
 #quantityBtn #minusBtn{
     padding: 10px;
-    border: 1px solid rgb(207, 207, 207);
+    border: 0px solid rgb(207, 207, 207);
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
 #quantityBtn #quantity {
     width: 50px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 0px solid rgb(0, 0, 0);
     background: white;
     color: black;
     font-size: 20px;
@@ -238,7 +240,7 @@ nav {
 }
 #productInfo #addToCart button {
     padding: 10px;
-
+    cursor: pointer;
 }
 #productInfo #addToCart #cartBtn {
     padding: 18px;
@@ -354,4 +356,78 @@ nav {
     color: white;
     width: 100px;
     margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
+
+#productsList{
+    display: flex;
+}
+
+#similarProducts h1{
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+#product{
+    border: 1px solid rgb(209, 209, 209);
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 12px;
+    background: white;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    /* box-shadow: 2px 2px 12px rgb(207, 207, 207); */
+}
+#product:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgb(179, 179, 179);
+    transition: all 0.1s ease-in;
+}
+#product img {
+    border: 0px solid black;
+    height: 300px;
+    width: 250px;
+    margin-left: 25px;
+}
+#product #details{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#product #details p{
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    color: rgb(129, 129, 129);
+}
+#product #details h1 {
+    font-size: 25px;
+    margin: 0;
+    font-style: italic;
+}
+#product #details #price {
+    margin-right: 20px;
+    font-size: 26px;
+    font-weight: 800;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+#product #details #price i {
+    font-size: 23px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: 0px solid black;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px 12px rgb(218, 218, 218);
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
