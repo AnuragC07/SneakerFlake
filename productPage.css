@@ -132,7 +132,7 @@ nav {
 }
 #productDetails #productImg img{
     height: 500px;
-    width: 500px;
+    width: 450px;
     margin-left: 30px;
     border: 0px solid black;
 }
@@ -143,6 +143,7 @@ nav {
 #productDetails #productImg #imgSlider img {
     border: 1px solid rgb(152, 152, 152);
     border-radius: 12px;
+    cursor: pointer;
 }
 #productDetails #productImg #img2 {
     height: 150px;
