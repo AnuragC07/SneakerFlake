@@ -3,6 +3,37 @@ var secondImg = document.getElementsByClassName("second-img");
 var quantityIndicator = document.getElementById("quantity");
 var plusBtn = document.getElementById("plusBtn");
 var minusBtn = document.getElementById("minusBtn");
+const popUp = document.querySelector("#popupIcon");
+const box = document.querySelector("#box");
+const main = document.querySelector("#main");
+const navtop = document.querySelector("#navtop");
+
+
+var flag = 0;
+
+popUp.addEventListener("mouseover", ()=> {
+
+
+    if(flag == 0){
+        box.setAttribute("style", "visibility: visible; transition: all 0.4s ease;");
+        console.log("h");
+        // flag = 1;
+        if(main.addEventListener("mouseover", ()=> {
+            box.setAttribute("style", "visibility: hidden");
+        }));
+        else if(navtop.addEventListener("mouseover", ()=> {
+            box.setAttribute("style", "visibility: hidden");
+        }));
+    }
+    // else{
+    //     box.setAttribute("style", "visibility: hidden");
+    //     console.log("h");
+    //     flag = 0;
+    // }
+})
+
+
+
 
 count = 0;
 

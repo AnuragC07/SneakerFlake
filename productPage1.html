@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="productPage1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@300&family=Roboto+Slab:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="top">
+      <div id="navtop">
+        <div id="logo">
+          <h1 onclick="window.location.href = 'index.html';">SneakerFlake</h1>
+          <i class="fa-regular fa-snowflake" style="color: #f86205"></i>
+          <div id="box">
+            <div id="part1">
+              <a href="products.html">All Products</a>
+              <h2>Company</h2>
+              <h2>Contact</h2>
+              <h2>Career</h2>
+              <h2>Affiliates</h2>
+              <h2>Stores</h2>
+            </div>
+            <div id="part2">
+              <h1>Useful Links</h1>
+              <h2>Support</h2>
+              <h2>Refund</h2>
+              <h2>FAQ</h2>
+              <h2>Feedback</h2>
+              <h2>Stories</h2>
+            </div>
+          </div>
+          <i
+            class="fa-solid fa-chevron-down"
+            id="popupIcon"
+            style="color: #3d3d3d"
+          ></i>
+        </div>
+        <div id="right">
+          <div id="search">
+            <input type="text" name="searchbar" id="searchbar" />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              id="searchbtn"
+              style="color: #b0b0b0"
+            ></i>
+          </div>
+          <div id="righticon">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="productDetails">
+        <div id="productImg">
+          <img src="./img/air max.png" id="main-img" alt="" />
+          <div id="imgSlider">
+            <img
+              src="./img/air-max-ap-shoes-3Rdq04 (1).jpeg"
+              class="second-img"
+              id="img2"
+              alt=""
+            />
+            <img src="./img/air-max-ap-shoes-3Rdq04 (2).jpeg" class="second-img" id="img2" alt="" />
+            <img src="./img/air-max-ap-shoes-3Rdq04.jpeg" class="second-img" id="img2" alt="" />
+          </div>
+        </div>
+        <div id="productInfo">
+          <h1>Nike Air Max</h1>
+          <p>Men's shoes</p>
+          <h2>₹9,999</h2>
+          <p id="taxes">inclusive of all taxes</p>
+          <h2 id="sizeh2">Select Size</h2>
+          <div id="sizes">
+            <span id="sizes">S</span>
+            <span id="sizes">M</span>
+            <span id="sizes">L</span>
+            <span id="sizes">XL</span>
+          </div>
+          <div id="quantityText">
+            <h1>Select Quantity</h1>
+          </div>
+          <div id="quantityBtn">
+            <button id="minusBtn">
+              <i class="fa-solid fa-minus" style="color: #000000"></i>
+            </button>
+            <button id="quantity">0</button>
+            <button id="plusBtn">
+              <i class="fa-solid fa-plus" style="color: #000000"></i>
+            </button>
+          </div>
+          <div id="addToCart">
+            <button id="cartBtn">Add to Cart</button>
+            <button id="wishlist">Wishlist</button>
+          </div>
+          <hr />
+          <div id="delivery">
+            <h1>Delivery Options</h1>
+            <input type="text" placeholder="Enter Pincode " />
+            <p>Please enter PIN code to check delivery time</p>
+            <h2>100% Original products</h2>
+            <h2>Pay on delivery available</h2>
+            <h2>Easy 14 days returns and exchanges</h2>
+            <h2>Try & Buy available</h2>
+          </div>
+          <div id="offers">
+            <h1>Offers</h1>
+            <p>Coupon Discount: 40% off (Your total saving: Rs. 365)</p>
+            <p>Applicable on: Purchase of 4 or more items</p>
+            <p>Easy 14 days returns and exchanges</p>
+            <p>Try & Buy might be available</p>
+          </div>
+          <div id="reviews">
+            <h1>Customer Ratings</h1>
+            <div id="rating">
+              <h2>4.2</h2>
+              <i class="fa-regular fa-star" style="color: #c0a916"></i>
+            </div>
+            <h3>434 Postive reviews</h3>
+            <h3>89 Negative reviews</h3>
+          </div>
+          <hr />
+          <div id="yourReview">
+            <h1 id="yourReviewH1">Write a review</h1>
+            <p>Name</p>
+            <input type="text" id="name" />
+            <p>Review</p>
+            <input type="text" id="review" />
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div id="similarProducts">
+        <h1>Similar Products</h1>
+        <div id="productsList">
+          <div id="product">
+            <img src="./img/air max.png" alt="" />
+            <div id="details">
+              <div id="name">
+                <p>Nike</p>
+                <h1>Air Max</h1>
+              </div>
+              <div id="price">
+                $499
+                <i class="fa-solid fa-heart" style="color: #b3b3b3"></i>
+              </div>
+            </div>
+          </div>
+          <div id="product">
+            <img src="./img/air max.png" alt="" />
+            <div id="details">
+              <div id="name">
+                <p>Nike</p>
+                <h1>Air Max</h1>
+              </div>
+              <div id="price">
+                $499
+                <i class="fa-solid fa-heart" style="color: #b3b3b3"></i>
+              </div>
+            </div>
+          </div>
+          <div id="product">
+            <img src="./img/air max.png" alt="" />
+            <div id="details">
+              <div id="name">
+                <p>Nike</p>
+                <h1>Air Max</h1>
+              </div>
+              <div id="price">
+                $499
+                <i class="fa-solid fa-heart" style="color: #b3b3b3"></i>
+              </div>
+            </div>
+          </div>
+          <div id="product">
+            <img src="./img/air max.png" alt="" />
+            <div id="details">
+              <div id="name">
+                <p>Nike</p>
+                <h1>Air Max</h1>
+              </div>
+              <div id="price">
+                $499
+                <i class="fa-solid fa-heart" style="color: #b3b3b3"></i>
+              </div>
+            </div>
+          </div>
+          <div id="product">
+            <img src="./img/air max.png" alt="" />
+            <div id="details">
+              <div id="name">
+                <p>Nike</p>
+                <h1>Air Max</h1>
+              </div>
+              <div id="price">
+                $499
+                <i class="fa-solid fa-heart" style="color: #b3b3b3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="productPage.js"></script>
+  </body>
+</html>

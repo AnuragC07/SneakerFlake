@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+#top {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    box-shadow: 2px 2px 5px rgb(219, 219, 219);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0px solid rgb(137, 137, 137);
+    box-shadow: 2px 2px 12px rgb(0, 0, 0);
+    /* background: rgb(28, 28, 28); */
+    background: black;
+    /* filter: brightness(60%); */
+    backdrop-filter: blur(50px);
+}
+
+#navtop {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    font-size: 23px;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logo h1 {
+    margin-right: 10px;
+    font-weight: 400;
+    color: rgb(35, 35, 35);
+}
+
+#logo i {
+    font-size: 35px;
+
+}
+#logo  #popupIcon {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#right input {
+    border: 0px solid rgb(75, 75, 75);
+    color: rgb(80, 80, 80);
+    background: transparent;
+    border-radius: 12px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#right input:focus {
+    outline: none;
+    cursor: pointer;
+    color: rgb(80, 80, 80);
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#right #search {
+    border: 1px solid rgb(187, 187, 187);
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 22px;
+    margin-right: 90px;
+    cursor: pointer;
+}
+
+#right #righticon i {
+    font-size: 34px;
+    color: #000000;
+    margin-right: 20px;
+    transition: all 0.4s ease;
+}
+
+#right #righticon i:hover {
+    color: #f86205;
+    cursor: pointer;
+}
+#navtop #box {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 70vw;
+    font-size: 15px;
+    border: 0px solid red;
+    background: rgb(255, 255, 255);
+    color: #909090;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+    position: absolute;
+    top: 95px;
+    transition: all 0.3s ease-in;
+    /* box-shadow: 2px 2px 12px rgb(0, 0, 0); */
+    backdrop-filter: blur(90px);
+    padding: 50px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/* product Styles */
+
+#productDetails {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#productImg {
+    display: flex;
+    flex-direction: column;   
+    width: 40vw;
+}
+#productDetails #productImg img{
+    height: 500px;
+    width: 450px;
+    margin-left: 30px;
+    border: 0px solid black;
+}
+#productDetails #productImg #imgSlider {
+    display: flex;
+    margin-top: 10px;
+}
+#productDetails #productImg #imgSlider img {
+    border: 1px solid rgb(152, 152, 152);
+    border-radius: 12px;
+    cursor: pointer;
+}
+#productDetails #productImg #img2 {
+    height: 150px;
+    width: 150px;
+}
+#productInfo {
+    border: 0px solid rgb(188, 188, 188);
+    border-radius: 20px;
+    /* box-shadow: 2px 2px 12px rgb(125, 125, 125);  */
+    width: 50vw;
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+#productInfo h1{
+    font-size: 47px;
+}
+#productInfo p{
+    font-size: 25px;
+    color: rgb(128, 128, 128);
+    margin-bottom: 20px;
+}
+#productInfo h2{
+    font-size: 45px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+#productInfo #taxes{
+    font-size: 22px;
+    color: #e15600;
+    margin-bottom: 20px;
+}
+#productInfo #sizes {
+    display: flex;
+    gap: 20px;
+    font-size: 21px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+#productInfo #sizeh2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+#productInfo span {
+    border: 1px solid rgb(183, 183, 183);
+    padding: 10px;
+    border-radius: 12px;
+}
+#quantityBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 40px;
+}
+#quantityText h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#quantityBtn #plusBtn{
+    padding: 10px;
+    border: 0px solid rgb(198, 198, 198);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#quantityBtn #minusBtn{
+    padding: 10px;
+    border: 0px solid rgb(207, 207, 207);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#quantityBtn #quantity {
+    width: 50px;
+    border: 0px solid rgb(0, 0, 0);
+    background: white;
+    color: black;
+    font-size: 20px;
+}
+#quantityBtn input {
+    padding-left: 10px;
+    font-size: 20px;
+    width: 50px;
+}
+
+#productInfo #addToCart {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+#productInfo #addToCart button {
+    padding: 10px;
+    cursor: pointer;
+}
+#productInfo #addToCart #cartBtn {
+    padding: 18px;
+    font-size: 22px;
+    background: #000000;
+    color: white;
+    border-radius: 42px;
+    width: 90%;
+    margin-left: 35px;
+}
+#productInfo #addToCart #wishlist {
+    padding: 15px;
+    font-size: 21px;
+    background: white;
+    border: 1px solid rgb(142, 142, 142);
+    border-radius: 42px;
+    width: 90%;
+    margin-left: 35px;
+    margin-bottom: 40px;
+} 
+#productInfo #addToCart #wishlist:hover {
+    background: rgb(233, 233, 233);
+    border: 1px solid rgb(163, 163, 163);
+}
+#productInfo  #delivery{
+    margin-top: 30px;
+}
+#productInfo  #delivery h1 {
+    font-size: 35px;
+}
+#productInfo  #delivery input {
+    margin-top: 30px;
+    height: 45px;
+    border: 1px solid black;
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 200;
+}
+#productInfo  #delivery p{
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+#productInfo  #delivery h2{
+    font-size: 19px;
+    font-weight: 400;
+}
+#productInfo  #offers h1{
+    font-size: 35px;
+    margin: 25px 0px;
+}
+#productInfo  #offers p{
+    margin-top: 15px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #000000;
+}
+#productInfo #reviews{
+    margin-top: 30px;
+}
+#productInfo #reviews h1{
+    font-size: 35px;
+}
+#productInfo #reviews h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#productInfo #reviews h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(99, 99, 99);
+    margin-bottom: 20px;
+}
+#productInfo #reviews #rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#productInfo #reviews #rating i{
+    font-size: 34px;
+}
+#productInfo #yourReview {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+#productInfo #yourReview h1{
+    font-size: 29px;
+    margin-top: 30px;
+}
+#productInfo #yourReview p{
+    margin-bottom: 10px;
+    color: black;
+    font-size: 23px;
+    margin-top: 30px;
+}
+#productInfo #yourReview #name {
+    height: 40px;
+    width: 570px;
+    padding-left: 20px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+#productInfo #yourReview #review {
+    height: 190px;
+    width: 570px;
+    padding-left: 20px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+#productInfo #yourReview button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: black;
+    color: white;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#productsList{
+    display: flex;
+}
+
+#similarProducts h1{
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+#product{
+    border: 1px solid rgb(209, 209, 209);
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 12px;
+    background: white;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    /* box-shadow: 2px 2px 12px rgb(207, 207, 207); */
+}
+#product:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgb(179, 179, 179);
+    transition: all 0.1s ease-in;
+}
+#product img {
+    border: 0px solid black;
+    height: 300px;
+    width: 250px;
+    margin-left: 25px;
+}
+#product #details{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#product #details p{
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    color: rgb(129, 129, 129);
+}
+#product #details h1 {
+    font-size: 25px;
+    margin: 0;
+    font-style: italic;
+}
+#product #details #price {
+    margin-right: 20px;
+    font-size: 26px;
+    font-weight: 800;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+#product #details #price i {
+    font-size: 23px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: 0px solid black;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px 12px rgb(218, 218, 218);
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
