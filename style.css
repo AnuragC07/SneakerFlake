@@ -470,7 +470,7 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     justify-content: space-evenly;
     color: white;
     background: #000000;
-    padding: 40px 0px;
+    padding: 80px 0px;
 }
 #footer #part1 h1{
     font-size: 20px;
@@ -539,6 +539,17 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     margin-top: 10px;
     font-weight: 200;
     color: #c7c7c7;
+}
+ #part5 h1 {
+    margin-right: 10px;
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+}
+
+#part5 #logo i {
+    font-size: 35px;
+
 }
 
 

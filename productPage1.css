@@ -103,14 +103,17 @@ nav {
     visibility: hidden;
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
     height: 300px;
     width: 70vw;
     font-size: 15px;
-    border: 0px solid red;
+    font-weight: 200;
     background: rgb(255, 255, 255);
     color: #909090;
     border: 1px solid rgb(232, 232, 232);
-    border-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     position: absolute;
     top: 95px;
     transition: all 0.3s ease-in;
@@ -119,6 +122,18 @@ nav {
     padding: 50px;
     cursor: pointer;
     z-index: 999;
+}
+#navtop #box a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    color: #909090;
+}
+#navtop #box a:hover {
+    color: #383838;
+}
+#navtop #box h2:hover {
+    color: #383838;
 }
 
 
@@ -175,6 +190,11 @@ nav {
     margin-top: 20px;
     font-weight: 400;
 }
+#productInfo #desc {
+    font-size: 20px;
+    font-weight: 200;
+    width: 600px;
+}
 #productInfo #taxes{
     font-size: 22px;
     color: #e15600;
@@ -191,6 +211,11 @@ nav {
 #productInfo #sizeh2 {
     font-size: 22px;
     margin-bottom: 20px;
+}
+#productInfo #size {
+    border: 1px solid rgb(183, 183, 183);
+    padding: 10px;
+    border-radius: 12px;
 }
 #productInfo span {
     border: 1px solid rgb(183, 183, 183);
@@ -211,17 +236,37 @@ nav {
 }
 #quantityBtn #plusBtn{
     padding: 10px;
+    height: 40px;
+    width: 40px;
     border: 0px solid rgb(198, 198, 198);
+    border-radius: 50%;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
+#quantityBtn #plusBtn:hover {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    background: #ededed;
+    border: 0px solid rgb(198, 198, 198);
+}
 #quantityBtn #minusBtn{
     padding: 10px;
-    border: 0px solid rgb(207, 207, 207);
+    height: 40px;
+    width: 40px;
+    border: 0px solid rgb(198, 198, 198);
+    border-radius: 50%;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
+}
+#quantityBtn #minusBtn:hover {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    background: #ededed;
+    border: 0px solid rgb(198, 198, 198);
 }
 #quantityBtn #quantity {
     width: 50px;
@@ -241,10 +286,12 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 
 }
 #productInfo #addToCart button {
     padding: 10px;
+    border: none;
     cursor: pointer;
 }
 #productInfo #addToCart #cartBtn {
@@ -255,6 +302,10 @@ nav {
     border-radius: 42px;
     width: 90%;
     margin-left: 35px;
+    transition: 0.2s;
+}
+#productInfo #addToCart #cartBtn:hover{
+    box-shadow: 2px 2px 25px 6px  rgb(187, 187, 187);
 }
 #productInfo #addToCart #wishlist {
     padding: 15px;
@@ -268,7 +319,7 @@ nav {
 } 
 #productInfo #addToCart #wishlist:hover {
     background: rgb(233, 233, 233);
-    border: 1px solid rgb(163, 163, 163);
+    border: 1px solid rgb(233, 233, 233);
 }
 #productInfo  #delivery{
     margin-top: 30px;
@@ -438,5 +489,99 @@ nav {
     padding: 8px;
     cursor: pointer;
     border-radius: 50%;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background: #000000;
+    margin-top: 150px;
+    padding: 80px 0px;
+}
+#footer #part1 h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+#footer #part1 h2{
+    font-size: 18px;
+    margin: 8px 0px;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgb(161, 161, 161);
+}
+#footer #part2 h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+#footer #part2 h2{
+    font-size: 18px;
+    margin: 8px 0px;
+    font-weight: 400;
+    color: rgb(161, 161, 161);
+    cursor: pointer;
+}
+#footer #part3 h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+#footer #part3 h2{
+    font-size: 18px;
+    margin: 8px 0px;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgb(161, 161, 161);
+}
+#footer #part4 h1{
+    font-size: 21px;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+#footer #part4 input {
+    border: 1px solid black;
+    padding: 5px;
+}
+#footer #part4 button {
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    background: black;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 200;
+    width: 50px;
+}
+#footer #part4 i {
+    font-size: 25px;
+    cursor: pointer;
+
+    margin: 5px 10px;
+}
+#footer #part4 p{
+    margin-top: 10px;
+    font-weight: 200;
+    color: #c7c7c7;
+}
+#footer #part5 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#part5 h1 {
+    margin-right: 10px;
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+}
+
+#part5 #logo i {
+    font-size: 35px;
+
 }
 
