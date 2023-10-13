@@ -102,13 +102,19 @@ nav {
     visibility: hidden;
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
     height: 300px;
-    width: 100vw;
-    border: 0px solid red;
-    background: rgba(23, 23, 23);
-    color: #ffffff;
+    width: 70vw;
+    font-size: 15px;
+    font-weight: 200;
+    background: rgb(255, 255, 255);
+    color: #909090;
+    border: 1px solid rgb(232, 232, 232);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     position: absolute;
-    top: 165px;
+    top: 95px;
     transition: all 0.3s ease-in;
     /* box-shadow: 2px 2px 12px rgb(0, 0, 0); */
     backdrop-filter: blur(90px);
@@ -116,7 +122,18 @@ nav {
     cursor: pointer;
     z-index: 999;
 }
-
+#navtop #box a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    color: #909090;
+}
+#navtop #box a:hover {
+    color: #383838;
+}
+#navtop #box h2:hover {
+    color: #383838;
+}
 
 /* product Styles */
 
@@ -207,17 +224,37 @@ nav {
 }
 #quantityBtn #plusBtn{
     padding: 10px;
+    height: 40px;
+    width: 40px;
     border: 0px solid rgb(198, 198, 198);
+    border-radius: 50%;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
+#quantityBtn #plusBtn:hover {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    background: #ededed;
+    border: 0px solid rgb(198, 198, 198);
+}
 #quantityBtn #minusBtn{
     padding: 10px;
-    border: 0px solid rgb(207, 207, 207);
+    height: 40px;
+    width: 40px;
+    border: 0px solid rgb(198, 198, 198);
+    border-radius: 50%;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
+}
+#quantityBtn #minusBtn:hover {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    background: #ededed;
+    border: 0px solid rgb(198, 198, 198);
 }
 #quantityBtn #quantity {
     width: 50px;

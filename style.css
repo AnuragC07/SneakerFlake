@@ -116,10 +116,13 @@ nav {
     height: 300px;
     width: 100vw;
     border: 0px solid red;
+    list-style: none;
+    text-decoration: none;
     background: rgba(23, 23, 23);
-    color: #ffffff;
+    color: #adadad;
     position: absolute;
     top: 165px;
+    font-weight: 400;
     transition: all 0.3s ease-in;
     /* box-shadow: 2px 2px 12px rgb(0, 0, 0); */
     backdrop-filter: blur(90px);
@@ -127,6 +130,23 @@ nav {
     cursor: pointer;
     z-index: 999;
 }
+#navbtm #box a{
+    text-decoration: none;
+    font-size: 22px;
+    /* font-weight: 400; */
+    color: #adadad;
+}
+#navbtm #box h2{
+    font-weight: 400;
+}
+#navbtm #box a:hover {
+    color: #ffffff;
+}
+#navbtm #box h2:hover {
+    color: #ffffff;
+    font-weight: 400;
+}
+
 
 
 #navbtm li {

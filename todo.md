@@ -7,4 +7,14 @@ implement cart logic
 create wishlist page
 
 download more shoe pics
+(
+    air max
+    air jordan
+    crater 
+    hippie
+    blazer
+    dunk
+    jumpman
+    pegasus trail
+)
 copy paste all products files
