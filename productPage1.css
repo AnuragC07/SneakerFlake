@@ -199,7 +199,9 @@
     font-size: 21px;
     font-weight: 200;
     cursor: pointer;
+    user-select: none;
 }
+
 
 #productInfo #sizeh2 {
     font-size: 22px;
@@ -795,6 +797,9 @@
     #footer{
         display: flex;
         flex-direction: column;
+    }
+    #part5 #logo {
+        margin-top: 30px;
     }
     #part5 #logo i {
         font-size: 20px;

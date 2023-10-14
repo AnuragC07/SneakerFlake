@@ -11,6 +11,7 @@ const navtop = document.querySelector("#navtop");
 var sizesBox = document.querySelectorAll("#size");
 
 var flag = 0;
+var cartCounter = 0;
 
 popUp.addEventListener("mouseover", ()=> {
 
@@ -37,19 +38,19 @@ popUp.addEventListener("mouseover", ()=> {
     
 })
 
-count = 0;
+cartCounter = 0;
 sizesBox.forEach(function(size) {
     
         size.addEventListener('click', function() {
-            if(count == 0){
+            if(cartCounter == 0){
             size.style.backgroundColor = 'black';
             size.style.color = 'white';
-            count = 1;
+            cartCounter = 1;
             }
-            else if(count == 1){
+            else if(cartCounter == 1){
                 size.style.backgroundColor = 'white';
                 size.style.color = 'black';
-                count = 0;
+                cartCounter = 0;
             }
         });
   });
