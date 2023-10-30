@@ -10,6 +10,8 @@ var menuitem = document.querySelector("#productSection");
 const navtop = document.querySelector("#navtop");
 var sizesBox = document.querySelectorAll("#size");
 
+var cartBtn1 = document.getElementById("cartBtn1");
+
 var flag = 0;
 var cartCounter = 0;
 
@@ -88,3 +90,26 @@ minusBtn.onclick = function() {
     }
     
 }
+
+//for adding things to cart script
+
+  cartBtn1.addEventListener('click', function () {
+    console.log('Add to Cart button clicked');
+    
+    // Hide all product cards with the class "cartProduct1" in the cart.html file
+    var cartProducts = document.getElementsByClassName('cartProduct1');
+    for (var i = 0; i < cartProducts.length; i++) {
+      cartProducts[i].style.display = 'none';
+    }
+  
+    // Now, show only the product card that corresponds to the clicked "Add to Cart" button
+    // You can identify the specific product card using its unique class name.
+    var selectedProductClass = "product-card product1 cartProduct1"; // Set this to the class name of the product card you want to display
+    var selectedProduct = document.getElementsByClassName(selectedProductClass);
+    for (var i = 0; i < selectedProduct.length; i++) {
+      selectedProduct[i].style.display = 'block';
+    }
+  });
+  
+  
+

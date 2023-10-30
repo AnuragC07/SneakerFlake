@@ -35,7 +35,7 @@
                 ></i>
               </div>
               <div id="righticon">
-                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-bag-shopping" onclick="window.location.href = 'cart.html';"></i>
                 <i class="fa-regular fa-heart"></i>
               </div>
             </div>
@@ -50,7 +50,7 @@
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">
-                    <input type="checkbox" checked="checked">Adidas
+                    <input type="checkbox" >Adidas
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -58,11 +58,11 @@
             <div id="price">
                 <h1>Price</h1>
                 <label class="container">
-                    <input type="checkbox" checked="checked">$300-$400
+                    <input type="checkbox" id="GreaterThan">>₹10,000
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">
-                    <input type="checkbox" checked="checked">$400-$500
+                    <input type="checkbox" id="LessThan"><₹10,000
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -70,19 +70,19 @@
             <div id="color">
                 <h1>Colors</h1>
                 <label class="container">
-                    <input type="checkbox" checked="checked"><span id="color-icon1">01</span>Red
+                    <input type="checkbox"><span id="color-icon1">01</span>Red
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">
-                    <input type="checkbox" checked="checked"><span id="color-icon2">01</span>White
+                    <input type="checkbox"><span id="color-icon2">01</span>White
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">
-                  <input type="checkbox" checked="checked"><span id="color-icon3">01</span>Black
+                  <input type="checkbox"><span id="color-icon3">01</span>Black
                   <span class="checkmark"></span>
               </label>
               <label class="container">
-                <input type="checkbox" checked="checked"><span id="color-icon4">01</span>Green
+                <input type="checkbox"><span id="color-icon4">01</span>Green
                 <span class="checkmark"></span>
             </label>
             </div>
@@ -90,7 +90,7 @@
         </section>
 
         <section id="main-content">
-          <div id="product" onclick="window.location.href = 'productPage1.html';">
+          <div id="product" onclick="window.location.href = 'productPage1.html';" class="LessThanProduct">
             <img src="./img/air max.png" alt="">
             <div id="details">
               <div id="name">
@@ -104,7 +104,7 @@
             </div>
           </div>
 
-          <div id="product" onclick="window.location.href = 'productPage2.html';">
+          <div id="product" onclick="window.location.href = 'productPage2.html';" class="GreaterThanProduct">
             <img src="./img/air-jordan-1-mid-shoes-SQf7DM-removebg-preview.png" alt="">
             <div id="details">
               <div id="name">
@@ -118,7 +118,7 @@
             </div>
           </div>
 
-          <div id="product" onclick="window.location.href = 'productPage3.html';">
+          <div id="product" onclick="window.location.href = 'productPage3.html';" class="GreaterThanProduct">
             <img src="./img/vomero-16-road-running-shoes-h0KMSg__2_-removebg-preview.png" alt="">
             <div id="details">
               <div id="name">
@@ -132,7 +132,7 @@
             </div>
           </div>
 
-          <div id="product" onclick="window.location.href = 'productPage4.html';">
+          <div id="product" onclick="window.location.href = 'productPage4.html';" class="LessThanProduct">
             <img src="./img/acg-mountain-fly-2-low-shoes-4LXRfM-removebg-preview.png" alt="">
             <div id="details">
               <div id="name">
@@ -146,7 +146,7 @@
             </div>
           </div>
 
-          <div id="product" onclick="window.location.href = 'productPage5.html';">
+          <div id="product" onclick="window.location.href = 'productPage5.html';" class="LessThanProduct">
             <img src="./img/custom-nike-blazer-mid-77-by-you-removebg-preview.png" alt="">
             <div id="details">
               <div id="name">
@@ -160,7 +160,7 @@
             </div>
           </div>
 
-          <div id="product" onclick="window.location.href = 'productPage6.html';">
+          <div id="product" onclick="window.location.href = 'productPage6.html';" class="LessThanProduct">
             <img src="./img/dunk-low-older-shoes-GxZFcV-removebg-preview.png" alt="">
             <div id="details">
               <div id="name">
@@ -174,7 +174,7 @@
             </div>
           </div>
 
-          <div id="product" onclick="window.location.href = 'productPage7.html';">
+          <div id="product" onclick="window.location.href = 'productPage7.html';" class="GreaterThanProduct">
             <img src="./img/jumpman-mvp-shoes-JV1HCs-removebg-preview.png" alt="">
             <div id="details">
               <div id="name">
@@ -188,7 +188,7 @@
             </div>
           </div>
 
-          <div id="product" onclick="window.location.href = 'productPage8.html';">
+          <div id="product" onclick="window.location.href = 'productPage8.html';" class="GreaterThanProduct">
             <img src="./img/pegasus-trail-4-trail-running-shoes-LP9MFR-removebg-preview.png" alt="">
             <div id="details">
               <div id="name">
@@ -204,5 +204,6 @@
 
         </section>
     </section>
+    <script src="products.js"></script>
 </body>
 </html>

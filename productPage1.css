@@ -289,7 +289,7 @@
     border: none;
     cursor: pointer;
 }
-#productInfo #addToCart #cartBtn {
+#productInfo #addToCart #cartBtn1 {
     padding: 18px;
     font-size: 22px;
     background: #000000;
@@ -299,7 +299,7 @@
     margin-left: 35px;
     transition: 0.2s;
 }
-#productInfo #addToCart #cartBtn:hover{
+#productInfo #addToCart #cartBtn1:hover{
     box-shadow: 2px 2px 25px 6px  rgb(187, 187, 187);
 }
 #productInfo #addToCart #wishlist {

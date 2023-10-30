@@ -302,7 +302,7 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     background: #e8e8e8;
     border-radius: 5px;
     height: 350px;
-    width: 336px;
+    width: 99%;
     margin-left: 0px;
 }
 #product #productDetails {
@@ -432,7 +432,7 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     margin-top: 30px;
 }
 #chooseFromPopularChoices #sectionDetails #product img {
-    width: 348px;
+    width: 99%;
     margin-left: 0;
 }
 
@@ -450,6 +450,9 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     font-style: italic;
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
+}
+#styleYourself #textSection h1{
+    margin-left: 50px;
 }
 #styleYourself #textSection p{
     font-weight: 200;

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@300&family=Roboto+Slab:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <section id="top">
+        <div id="navtop">
+          <div id="logo">
+            <h1 onclick="window.location.href = 'index.html';">SneakerFlake</h1>
+            <i class="fa-regular fa-snowflake" style="color: #f86205"></i>
+            <div id="box">
+              <div id="part1">
+                <a href="products.html">All Products</a><br>
+                <a href="productPage1.html">Air Max</a><br>
+                <a href="products.html">Air Jordan</a><br>
+                <a href="products.html">Vomero</a><br>
+                <a href="products.html">Hippie</a><br>
+                <a href="products.html">Blazer</a><br>
+                <a href="products.html">Dunk</a><br>
+              </div>
+              <hr>
+              <div id="part2">
+                <a href="products.html">Jumpman</a><br>
+                <a href="products.html">Pegasus</a><br>
+                <h2>Refund</h2>
+                <h2>FAQ</h2>
+                <h2>Feedback</h2>
+                <h2>Stories</h2>
+              </div>
+            </div>
+            <i
+              class="fa-solid fa-chevron-down"
+              id="popupIcon"
+              style="color: #3d3d3d"
+            ></i>
+          </div>
+          <div id="right">
+            <div id="search">
+              <input type="text" name="searchbar" id="searchbar" />
+              <i
+                class="fa-solid fa-magnifying-glass"
+                id="searchbtn"
+                style="color: #b0b0b0"
+              ></i>
+            </div>
+            <div id="righticon">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-bars-staggered" id="hamburger" style="color: #171e2b;"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main">
+        <section id="main-content">
+            <div id="product" onclick="window.location.href = 'productPage1.html';" class="product-card product1 cartProduct1">
+              <img src="./img/air max.png" alt="">
+              <div id="details">
+                <div id="name">
+                  <p>Nike</p>
+                  <h1>Air Max</h1>
+                </div>
+                <div id="price">
+                  ₹9,999
+                  <i class="fa-regular fa-trash-can" style="color: #5b5b5b;"></i>
+                </div>
+              </div>
+            </div>
+    
+            <div id="product" onclick="window.location.href = 'productPage2.html';" class="GreaterThanProduct">
+              <img src="./img/air-jordan-1-mid-shoes-SQf7DM-removebg-preview.png" alt="">
+              <div id="details">
+                <div id="name">
+                  <p>Nike</p>
+                  <h1>Air Jordan</h1>
+                </div>
+                <div id="price">
+                  ₹12,999
+                  <i class="fa-regular fa-trash-can" style="color: #5b5b5b;"></i>
+                </div>
+              </div>
+            </div>
+    
+            <div id="product" onclick="window.location.href = 'productPage3.html';" class="GreaterThanProduct">
+              <img src="./img/vomero-16-road-running-shoes-h0KMSg__2_-removebg-preview.png" alt="">
+              <div id="details">
+                <div id="name">
+                  <p>Nike</p>
+                  <h1>Vomero</h1>
+                </div>
+                <div id="price">
+                  ₹11,999
+                  <i class="fa-regular fa-trash-can" style="color: #5b5b5b;"></i>
+                </div>
+              </div>
+            </div>
+    
+            <div id="product" onclick="window.location.href = 'productPage4.html';" class="LessThanProduct">
+              <img src="./img/acg-mountain-fly-2-low-shoes-4LXRfM-removebg-preview.png" alt="">
+              <div id="details">
+                <div id="name">
+                  <p>Nike</p>
+                  <h1>ACG Hippie</h1>
+                </div>
+                <div id="price">
+                  ₹9,999
+                  <i class="fa-regular fa-trash-can" style="color: #5b5b5b;"></i>
+                </div>
+              </div>
+            </div>
+    
+            <div id="product" onclick="window.location.href = 'productPage5.html';" class="LessThanProduct">
+              <img src="./img/custom-nike-blazer-mid-77-by-you-removebg-preview.png" alt="">
+              <div id="details">
+                <div id="name">
+                  <p>Nike</p>
+                  <h1>Blazer</h1>
+                </div>
+                <div id="price">
+                  ₹9,999
+                  <i class="fa-regular fa-trash-can" style="color: #5b5b5b;"></i>
+                </div>
+              </div>
+            </div>
+    
+            <div id="product" onclick="window.location.href = 'productPage6.html';" class="LessThanProduct">
+              <img src="./img/dunk-low-older-shoes-GxZFcV-removebg-preview.png" alt="">
+              <div id="details">
+                <div id="name">
+                  <p>Nike</p>
+                  <h1>Dunk</h1>
+                </div>
+                <div id="price">
+                  ₹9,999
+                  <i class="fa-regular fa-trash-can" style="color: #5b5b5b;"></i>
+                </div>
+              </div>
+            </div>
+    
+            <div id="product" onclick="window.location.href = 'productPage7.html';" class="GreaterThanProduct">
+              <img src="./img/jumpman-mvp-shoes-JV1HCs-removebg-preview.png" alt="">
+              <div id="details">
+                <div id="name">
+                  <p>Nike</p>
+                  <h1>Jumpman</h1>
+                </div>
+                <div id="price">
+                  ₹12,999
+                  <i class="fa-regular fa-trash-can" style="color: #5b5b5b;"></i>
+                </div>
+              </div>
+            </div>
+    
+            <div id="product" onclick="window.location.href = 'productPage8.html';" class="GreaterThanProduct">
+              <img src="./img/pegasus-trail-4-trail-running-shoes-LP9MFR-removebg-preview.png" alt="">
+              <div id="details">
+                <div id="name">
+                  <p>Nike</p>
+                  <h1>Pegasus</h1>
+                </div>
+                <div id="price">
+                  ₹14,999
+                  <i class="fa-regular fa-trash-can" style="color: #5b5b5b;"></i>
+                </div>
+              </div>
+            </div>
+    
+          </section>
+        <section id="cartDetails">
+            <h1>Your Cart</h1>
+            <div id="subTotal">
+                <h2>Subtotal</h2>
+                <h2>₹15,999</h2>
+            </div>
+            <div id="checkoutBtn">
+                <button>Proceed to Check Out</button>
+                <button id="backToMain">Back to Products</button>
+            </div>
+        </section>  
+      </section>
+      <script src="productPage.js"></script>
+</body>
+</html>
