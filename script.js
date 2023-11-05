@@ -9,13 +9,24 @@ const menuitem = document.querySelector("#menuitem");
 const navtop = document.querySelector("#navtop");
 
 
+
+// menuItems.forEach((item, index) => {
+//     item.addEventListener("click", () => {
+//         wrapper.style.transform = `translateX(${-100 * index}vw)`;
+        
+//         // console.log("hello"+index);
+//     });
+// });
+
+
+
 var flag = 0;
 
 popUp.addEventListener("mouseover", ()=> {
 
 
     if(flag == 0){
-        box.setAttribute("style", "visibility: visible; transition: all 0.4s ease;");
+        box.setAttribute("style", "visibility: visible;");
         console.log("h");
         // flag = 1;
         if(main.addEventListener("mouseover", ()=> {
@@ -37,13 +48,6 @@ popUp.addEventListener("mouseover", ()=> {
 
 
 
-
-menuItems.forEach((item, index) => {
-    item.addEventListener("click", () => {
-        wrapper.style.transform = `translateX(${-100 * index}vw)`;
-        // console.log("hello"+index);
-    });
-});
 
 
 

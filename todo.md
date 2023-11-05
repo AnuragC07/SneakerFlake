@@ -25,8 +25,8 @@ add page links to all popup item links
 
 //FIX REPORT---
 --HOMEPAGE--
-1. display images slider shows over after clicking popup menu
-2. adding links in 'explore' button of corresponding img slider pics
+<!-- 1. display images slider shows over after clicking popup menu -->
+<!-- 2. adding links in 'explore' button of corresponding img slider pics -->
 3. in part 3 image cards, add img and link of each actual product
 4. add link of all product page in 'explore more' button 
 5. forward to all product page after clicking in pick your style button

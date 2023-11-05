@@ -97,6 +97,7 @@ nav {
     color: #f86205;
     cursor: pointer;
 }
+
 #navbtm i {
     color: rgb(209, 209, 209);
     cursor: pointer;
@@ -128,7 +129,7 @@ nav {
     backdrop-filter: blur(90px);
     padding: 50px;
     cursor: pointer;
-    z-index: 999;
+    z-index: 999999;
 }
 #navbtm #box a{
     text-decoration: none;
@@ -163,7 +164,23 @@ nav {
     color: #f86205;
     cursor: pointer;
 }
-
+#navbtm #navmenu{
+    display: flex;
+    gap: 30px;
+}
+#navbtm #navmenu a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: rgb(209, 209, 209);
+    transition: all 0.4s ease;
+}
+#navbtm #navmenu a:hover {
+    color: #f86205;
+    cursor: pointer;
+}
 
 
 #main {
@@ -175,6 +192,7 @@ nav {
     display: flex;
     width: 500vw;
     transition: all 1s ease-in-out;
+    z-index: 1;
 }
 #main #slideritem img {
     margin-top: 30px;
@@ -225,6 +243,14 @@ nav {
     cursor: pointer;
     color: #000000;
     transition: all 0.5s ease-in;
+}
+#slideritem  #slideriteminfo button a {
+    text-decoration: none;
+    color: white;
+}
+#slideritem  #slideriteminfo button a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -331,6 +357,14 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     transition: all 0.2s ease-in;
     cursor: pointer;
 }
+#CartBtn button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#CartBtn button a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 #CartBtn button:hover {
     background: #000000;
     color: white;
@@ -344,11 +378,16 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     height: 40px;
     font-size: 20px;
     font-style: italic;
+    padding-bottom: 5px;
     border: 1px solid black;
     color: white;
     background: #000000;
     cursor: pointer;
     margin-bottom: 40px;
+}
+#exploreMoreBtn button a{
+    text-decoration: none;
+    color: white;
 }
 
 #winterCollection {
@@ -396,6 +435,14 @@ clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
     border: none;
     color: #000000;
     background: white;
+}
+#mid button a{
+    text-decoration: none;
+    color: white;
+}
+#mid button a:hover {
+    text-decoration: none;
+    color: #000000;
 }
 #right {
     margin: 0;
