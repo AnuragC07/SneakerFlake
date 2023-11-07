@@ -27,11 +27,11 @@ add page links to all popup item links
 --HOMEPAGE--
 <!-- 1. display images slider shows over after clicking popup menu -->
 <!-- 2. adding links in 'explore' button of corresponding img slider pics -->
-3. in part 3 image cards, add img and link of each actual product
+<!-- 3. in part 3 image cards, add img and link of each actual product
 4. add link of all product page in 'explore more' button 
 5. forward to all product page after clicking in pick your style button
 6. same, add img and link of each actual product
-7. change the p tag 'style yourself with our stuff' to something professional
+7. change the p tag 'style yourself with our stuff' to something professional -->
 8. ADD HOMEPAGE MEDIA QUERIES
 
 --ALL PRODUCTS PAGE--
