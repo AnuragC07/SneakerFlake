@@ -894,7 +894,7 @@ nav {
         margin-top: 13px;
     }
     #exploreMoreBtn button {
-        margin-left: 37%;
+        margin-left: 32%;
         width: 40%;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -955,5 +955,153 @@ nav {
         height: 70vh;
         width: 100vw;
        margin: 0;
+    }
+    #sectionHeader h1 {
+        font-size: 32px;
+        margin: 20px;
+        font-style: italic;
+    }
+    #sectionDetails {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    #styleYourself #textSection h1 {
+        margin-left: 50px;
+        font-size: 35px;
+    }
+    #styleYourself #textSection p {
+        font-weight: 200;
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    #infintyRN4 {
+        /* padding: 20px; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #infintyRN4 img {
+        width: 98vw;
+        margin: 20px 0px;
+        margin-top: 50px;
+        clip-path: polygon(0 0, 69% 0, 100% 20%, 100% 100%, 75% 100%, 30% 100%, 0 77%, 0 29%);
+    }
+    #infintyRN4 h1 {
+        font-size: 32px;
+        font-style: italic;
+    }
+    #infintyRN4 p {
+        font-size: 21px;
+        font-weight: 200;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 80px;
+    }
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: white;
+        background: #000000;
+        padding: 80px 30px;
+        font-size: 12px;
+    }
+    #footer #sect1{
+        display: flex;
+        gap: 20px;
+    }
+    #footer #part1 h1 {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 15px 0px;
+        cursor: pointer;
+    }
+    #footer #part1 h2 {
+        font-size: 12px;
+        margin: 8px 0px;
+        font-weight: 400;
+        cursor: pointer;
+        color: rgb(161, 161, 161);
+    }
+    #footer #part2 h1 {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 15px 0px;
+        cursor: pointer;
+    }
+    
+    #footer #part2 h2 {
+        font-size: 12px;
+        margin: 8px 0px;
+        font-weight: 400;
+        color: rgb(161, 161, 161);
+        cursor: pointer;
+    }
+    #footer #part3 h1 {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 15px 0px;
+        cursor: pointer;
+    }
+    
+    #footer #part3 h2 {
+        font-size: 12px;
+        margin: 8px 0px;
+        font-weight: 400;
+        cursor: pointer;
+        color: rgb(161, 161, 161);
+    }
+    #footer #part4 h1 {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 15px 10px;
+    }
+    
+    #footer #part4 input {
+        border: 1px solid black;
+        padding: 5px;
+        width: 150px;
+    }
+    #footer #part4 button {
+        border: 1px solid rgb(255, 255, 255);
+        cursor: pointer;
+        background: black;
+        color: #ffffff;
+        padding: 1px;
+        margin: 10px;
+        font-size: 12px;
+        font-weight: 200;
+        width: 50px;
+    }
+    #footer #part4 i {
+        font-size: 17px;
+        cursor: pointer;
+    
+        margin: 1px 7px;
+    }
+    #footer #part4 p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-weight: 200;
+        color: #c7c7c7;
+    }
+    #part5 h1 {
+        margin-left: 70px;
+        margin-top: 20px;
+        margin-right: 10px;
+        font-weight: 400;
+        color: white;
+        font-size: 30px;
+    }
+    
+    #part5 #logo i {
+        font-size: 35px;
+        margin-top: 20px;
     }
 }
