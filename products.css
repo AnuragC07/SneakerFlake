@@ -102,19 +102,37 @@ nav {
     visibility: hidden;
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
     height: 300px;
-    width: 100vw;
-    border: 0px solid red;
-    background: rgba(23, 23, 23);
-    color: #ffffff;
+    width: 70vw;
+    font-size: 15px;
+    font-weight: 200;
+    background: rgb(255, 255, 255);
+    color: #909090;
+    border: 1px solid rgb(232, 232, 232);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     position: absolute;
-    top: 165px;
+    top: 95px;
     transition: all 0.3s ease-in;
     /* box-shadow: 2px 2px 12px rgb(0, 0, 0); */
     backdrop-filter: blur(90px);
     padding: 50px;
     cursor: pointer;
     z-index: 999;
+}
+#navtop #box a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    color: #909090;
+}
+#navtop #box a:hover {
+    color: #383838;
+}
+#navtop #box h2:hover {
+    color: #383838;
 }
 
 
@@ -287,5 +305,196 @@ nav {
     border-radius: 50%;
 }
 
+
+@media only screen and (max-width: 430px) {
+
+    #logo h1 {
+        color: rgb(0, 0, 0);
+        font-size: 23px;
+    }
+
+    #navtop {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        font-size: 13px;
+    }
+
+    #logo i {
+        font-size: 23px;
+
+    }
+
+    #right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    #right #search {
+        border: 0px solid rgb(187, 187, 187);
+        background: transparent;
+        width: 0;
+        border-radius: 22px;
+        margin-right: 0px;
+        cursor: pointer;
+        display: flex;
+    }
+
+    #right input {
+        height: 0;
+        width: 0;
+    }
+
+    #right #search i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0px;
+        color: #000000;
+        margin-right: 15px;
+    }
+
+    #right #righticon {
+        display: flex;
+    }
+
+    #right #righticon i {
+        font-size: 25px;
+        color: #000000;
+        margin-right: 20px;
+        transition: all 0.4s ease;
+    }
+
+    #navbtm #navmenu {
+        display: flex;
+        gap: 15px;
+    }
+
+    #navbtm #navmenu a {
+        text-decoration: none;
+        font-size: 0px;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        color: rgb(209, 209, 209);
+        transition: all 0.4s ease;
+    }
+
+    #navbtm #popupIcon {
+        margin-left: 115px;
+    }
+
+    #navtop #box {
+        top: 70px;
+        height: 300px;
+        width: 94vw;
+        font-size: 18px;
+    }
+
+    #navtop #box a {
+        text-decoration: none;
+        font-size: 18px;
+        /* font-weight: 400; */
+        color: #adadad;
+    }
+    #navtop #box a:hover {
+        color: #383838;
+    }
+    #navtop #box h2:hover {
+        color: #383838;
+    }
+    
+    #navtop #box #part2 {
+        font-size: 13px;
+    }
+    #navtop #box #part2 h2{
+        font-size: 18px;
+        color: #adadad;
+    }
+    #navbtm #box a {
+        text-decoration: none;
+        font-size: 19px;
+        /* font-weight: 400; */
+        color: #adadad;
+    }
+    #leftbar {
+        position: absolute;
+        border: 0px solid rgb(84, 84, 84);
+        background: rgb(255, 255, 255);
+        border-radius: 12px;
+        margin-left: 35px;
+        /* box-shadow: 2px 2px 12px rgb(195, 195, 195); */
+        display: flex;
+        z-index: 9;
+        height: 22vh;
+        padding: 30px;
+        width: 83%;
+        top: 80px;
+    }
+    #leftbar #brands {
+        display: flex;
+        flex-direction: column;
+        font-size: 21px;
+        padding-bottom: 20px;
+        margin-right: 30px;
+        width: 200px;
+    }
+    #leftbar #brands h1{
+        font-size: 21px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        color: rgb(61, 61, 61);
+    }
+    #leftbar label {
+        font-size: 15px;
+    }
+    #leftbar #brands input[type="checkbox"] {
+        margin-right: 10px;
+        font-size: 4px;
+        margin-bottom: 10px;
+    }
+    #leftbar #price {
+        display: flex;
+        flex-direction: column;
+        font-size: 21px;
+        padding-bottom: 20px;
+        margin-left: 50px;
+        width: 200px;
+    }
+    #leftbar #price  h1{
+        font-size: 21px;
+        margin-top: 0px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: rgb(61, 61, 61);
+    }
+    #leftbar #price  input {
+        margin-right: 10px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #leftbar #color{
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+    #main-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        width: 82%;
+        background: rgb(255, 255, 255);
+        border: 0px solid black;
+        /* box-shadow: 2px 2px 12px rgb(195, 195, 195); */
+        border-radius: 12px;
+        margin-left: 2%;
+        padding: 20px;
+        margin-left: 35px;
+        margin-top: 180px;
+    }
+}
 
 

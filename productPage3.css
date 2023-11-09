@@ -156,6 +156,9 @@ nav {
     margin-left: 30px;
     border: 0px solid black;
 }
+#productDetails #productImg #main-img{
+    margin-left: 15px;
+}
 #productDetails #productImg #imgSlider {
     display: flex;
     margin-top: 10px;
@@ -168,6 +171,9 @@ nav {
 #productDetails #productImg #img2 {
     height: 150px;
     width: 150px;
+}
+#productDetails #productImg #imgSlider #img2 {
+    margin-left: 20px;
 }
 #productInfo {
     border: 0px solid rgb(188, 188, 188);
@@ -610,8 +616,41 @@ nav {
         top: -10px;
         right: -60px;
     }
+    #navtop #box {
+        top: 75px;
+        height: 300px;
+        width: 90vw;
+        font-size: 18px;
+        right: 20px;
+    }
+
+    #navtop #box a {
+        text-decoration: none;
+        font-size: 18px;
+        /* font-weight: 400; */
+        color: #adadad;
+    }
+    #navtop #box a:hover {
+        color: #383838;
+    }
+    #navtop #box h2:hover {
+        color: #383838;
+    }
+    #navtop #box #part2 {
+        font-size: 13px;
+    }
+    #navtop #box #part2 h2{
+        font-size: 18px;
+        color: #adadad;
+    }
+    #navbtm #box a {
+        text-decoration: none;
+        font-size: 19px;
+        /* font-weight: 400; */
+        color: #adadad;
+    }
     #right #righticon #hamburger{
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         visibility: visible;

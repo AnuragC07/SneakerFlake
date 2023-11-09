@@ -32,7 +32,7 @@ add page links to all popup item links
 5. forward to all product page after clicking in pick your style button
 6. same, add img and link of each actual product
 7. change the p tag 'style yourself with our stuff' to something professional -->
-8. ADD HOMEPAGE MEDIA QUERIES
+<!-- 8. ADD HOMEPAGE MEDIA QUERIES -->
 
 --ALL PRODUCTS PAGE--
 1. decide what to actually keep in the filters menu (Remove all except price filter or keep only the brand filter along with the price filter)

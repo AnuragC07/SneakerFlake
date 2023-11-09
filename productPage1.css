@@ -145,17 +145,24 @@
 #productDetails #productImg img{
     height: 500px;
     width: 450px;
-    margin-left: 30px;
+    margin-left: 0px;
     border: 0px solid black;
+}
+#productDetails #productImg #main-img{
+    margin-left: 15px;
 }
 #productDetails #productImg #imgSlider {
     display: flex;
-    margin-top: 10px;
+    margin: 10px 0px;
+    
 }
 #productDetails #productImg #imgSlider img {
     border: 1px solid rgb(152, 152, 152);
     border-radius: 12px;
     cursor: pointer;
+}
+#productDetails #productImg #imgSlider #img2 {
+    margin-left: 20px;
 }
 #productDetails #productImg #img2 {
     height: 150px;
@@ -423,12 +430,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
 }
 #similarProducts h1{
     font-size: 35px;
     margin-top: 20px;
     margin-bottom: 40px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 #product{
@@ -616,8 +624,41 @@
         top: -10px;
         right: -60px;
     }
+    #navtop #box {
+        top: 75px;
+        height: 300px;
+        width: 90vw;
+        font-size: 18px;
+        right: 20px;
+    }
+
+    #navtop #box a {
+        text-decoration: none;
+        font-size: 18px;
+        /* font-weight: 400; */
+        color: #adadad;
+    }
+    #navtop #box a:hover {
+        color: #383838;
+    }
+    #navtop #box h2:hover {
+        color: #383838;
+    }
+    #navtop #box #part2 {
+        font-size: 13px;
+    }
+    #navtop #box #part2 h2{
+        font-size: 18px;
+        color: #adadad;
+    }
+    #navbtm #box a {
+        text-decoration: none;
+        font-size: 19px;
+        /* font-weight: 400; */
+        color: #adadad;
+    }
     #right #righticon #hamburger{
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         visibility: visible;
@@ -762,10 +803,10 @@
         cursor: pointer;
     }
     #similarProducts h1{
-        font-size: 25px;
+        font-size: 29px;
         margin-top: 20px;
         margin-bottom: 40px;
-        margin-left: 20px;
+        margin-left: 70px;
     }
     #product{
         border: 1px solid rgb(209, 209, 209);
@@ -774,7 +815,7 @@
         position: relative;
         border-radius: 12px;
         background: white;
-        margin-left: 60px;
+        margin-left: 40px;
         margin-bottom: 30px;
         /* box-shadow: 2px 2px 12px rgb(207, 207, 207); */
     }
